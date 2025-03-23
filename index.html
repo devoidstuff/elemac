@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemac - Reparación y Venta de Autoelevadores</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Import Roboto font */
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif; /* Updated to use Roboto */
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        header {
+            background: url('/images/cover.png') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 150px 20px; /* Increased padding to make the cover taller */
+            position: relative;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 2;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Added subtle drop shadow */
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+        }
+        nav {
+            background: #232323;
+            color: white;
+            padding: 16px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .services, .contact {
+            margin-top: 40px;
+        }
+        .services h2, .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .services p, .contact p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .about h2 {
+            font-size: 2rem; /* Ensure consistent size with other section titles */
+            margin-bottom: 20px;
+        }
+        .about p {
+            line-height: 1.6; /* Adjusted line spacing to match other sections */
+            margin-right: 100px; /* Added greater margin on the right side */
+        }
+        .map h2 {
+            font-size: 2rem; /* Ensure consistent size with other section titles */
+            margin-bottom: 20px;
+        }
+        footer {
+            background: #232323;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elemac</h1>
+        <p>Reparación y Venta de Autoelevadores desde 1994</p>
+    </header>
+    <nav>
+        <a href="#about">Quienes somos</a>
+        <a href="#services">Servicios</a>
+        <a href="#contact">Contacto</a>
+        <a href="#map">Mapa</a>
+    </nav>
+    <section id="about" class="about">
+        <h2>Quienes somos</h2>
+        <p>ELEMAC se dedica desde el año 1994 al mantenimiento, reparación, alquiler y venta de autoelevadores.</p>
+        <p>Sabemos que es de vital importancia para nuestros clientes contar con un servicio altamente capacitado, capaz de brindarle soluciones con rapidez y responsabilidad.</p>
+        <p>Por ese motivo, hemos puesto nuestra meta en mejorar constantemente, no solo la calidad de nuestros servicios, sino también la variedad y el alcance de los mismos.</p>
+        <p>A comienzos del 2010, se adquiere la división repuestos de la firma Vialven S.A. lo que, nuevamente, nos hace posible responder con mayor eficacia las necesidades de nuestros clientes al poseer un mayor stock de repuestos originales, además de convertirnos en importadores directos de los mismos.</p>
+        <div style="display: flex; gap: 10px; margin-top: 40px;"> <!-- Increased margin-top for more padding -->
+            <img src="/images/tira_0.png" alt="Image 1" style="width: 25%; height: auto; object-fit: cover;">
+            <img src="/images/tira_1.png" alt="Image 2" style="width: 25%; height: auto; object-fit: cover;">
+            <img src="/images/tira_2.jpg" alt="Image 3" style="width: 25%; height: auto; object-fit: cover;">
+            <img src="/images/tira_3.png" alt="Image 4" style="width: 25%; height: auto; object-fit: cover;">
+        </div>
+    </section>
+    <section id="services" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div style="text-align: left;">
+            <p>Ofrecemos una amplia gama de servicios para satisfacer las necesidades de nuestros clientes, incluyendo:</p>
+            <ul style="list-style: none; padding: 0; margin: 20px 0;">
+                <li style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">Mantenimiento</li>
+                <li style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">Reparación</li>
+                <li style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">Alquiler</li>
+                <li style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">Venta de autoelevadores nuevos y usados</li>
+            </ul>
+        </div>
+        <div style="margin-top: 20px;">
+            <img src="/images/elemac_1.jpg" alt="Elemac Servicios" style="width: 50%; height: auto;">
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contáctenos</h2>
+        <p>Email: administracion@elemac.com.ar</p>
+        <p>Teléfono: (011) 4238-7303 / 4304-3030</p>
+        <p>Dirección: Hipolito Yrigoyen 15257, Burzaco, Argentina, 1852</p>
+    </section>
+    <section id="map" class="map">
+        <h2>Mapa</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.975807952637!2d-58.40293062446465!3d-34.83170076957379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd4975576cf4b%3A0x4b4ca51b234e9727!2sElemac!5e0!3m2!1ses!2ses!4v1742737336231!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer>
+        &copy; 2025 Elemac. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
