@@ -137,6 +137,30 @@
                 width: 100%; /* Make the map iframe responsive */
                 height: 300px; /* Adjust height for smaller screens */
             }
+
+            .about div img:not(:first-child) {
+                display: none; /* Hide all images except the first one */
+            }
+            .about div img:first-child {
+                width: 100%; /* Make the first image full width */
+                height: auto;
+            }
+
+            img {
+                width: 100%; /* Make all images occupy the full screen width */
+                height: auto; /* Maintain aspect ratio */
+            }
+
+            .about div img {
+                width: 100% !important; /* Force images to occupy full width */
+                height: auto !important; /* Maintain aspect ratio */
+                object-fit: cover; /* Ensure proper scaling */
+            }
+
+            .services img {
+                width: 100% !important; /* Force the image in Servicios to occupy full width */
+                height: auto !important; /* Maintain aspect ratio */
+            }
         }
     </style>
 </head>
@@ -157,7 +181,7 @@
         <p>Sabemos que es de vital importancia para nuestros clientes contar con un servicio altamente capacitado, capaz de brindarle soluciones con rapidez y responsabilidad.</p>
         <p>Por ese motivo, hemos puesto nuestra meta en mejorar constantemente, no solo la calidad de nuestros servicios, sino también la variedad y el alcance de los mismos.</p>
         <p>A comienzos del 2010, se adquiere la división repuestos de la firma Vialven S.A. lo que, nuevamente, nos hace posible responder con mayor eficacia las necesidades de nuestros clientes al poseer un mayor stock de repuestos originales, además de convertirnos en importadores directos de los mismos.</p>
-        <div style="display: flex; gap: 10px; margin-top: 40px;"> <!-- Increased margin-top for more padding -->
+        <div style="display: flex; gap: 2px; margin-top: 40px;"> <!-- Increased margin-top for more padding -->
             <img src="./images/tira_0.png" alt="Image 1" style="width: 25%; height: auto; object-fit: cover;"> <!-- Updated path -->
             <img src="./images/tira_1.png" alt="Image 2" style="width: 25%; height: auto; object-fit: cover;"> <!-- Updated path -->
             <img src="./images/tira_2.jpg" alt="Image 3" style="width: 25%; height: auto; object-fit: cover;"> <!-- Updated path -->
@@ -169,10 +193,10 @@
         <div style="text-align: left;">
             <p>Ofrecemos una amplia gama de servicios para satisfacer las necesidades de nuestros clientes, incluyendo:</p>
             <ul style="list-style: none; padding: 0; margin: 20px 0;">
-                <li style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">Mantenimiento</li>
-                <li style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">Reparación</li>
-                <li style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">Alquiler</li>
-                <li style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">Venta de autoelevadores nuevos y usados</li>
+                <li style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px; color: #65343d;">Mantenimiento</li> <!-- Custom color -->
+                <li style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px; color: #65343d;">Reparación</li> <!-- Custom color -->
+                <li style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px; color: #65343d;">Alquiler</li> <!-- Custom color -->
+                <li style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px; color: #65343d;">Venta de autoelevadores nuevos y usados</li> <!-- Custom color -->
             </ul>
         </div>
         <div style="margin-top: 20px;">
@@ -181,9 +205,9 @@
     </section>
     <section id="contact" class="contact">
         <h2>Contáctenos</h2>
-        <p>Email: administracion@elemac.com.ar</p>
-        <p>Teléfono: (011) 4238-7303 / 4304-3030</p>
-        <p>Dirección: Hipolito Yrigoyen 15257, Burzaco, Argentina, 1852</p>
+        <p><b>Email:</b> administracion@elemac.com.ar</p>
+        <p><b>Teléfono:</b> (011) 4238-7303 / 4304-3030</p>
+        <p><b>Dirección:</b> Hipolito Yrigoyen 15257, Burzaco, Argentina, 1852</p>
     </section>
     <section id="map" class="map">
         <h2>Mapa</h2>
